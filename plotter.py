@@ -327,9 +327,6 @@ def model_scatter_plot(df, x_axis, y_axis, xlim, ylim, model_types, num_bootstra
     model_names = model_names[::-1]
 
     fit_line = ax.plot(xs, lin_fit_ys, color=f'tab:{fit_color}', zorder=7, linewidth=main_linewidth, label='Linear fit')
-    ax.set_xlabel(f'Multi-label Accuracy on {x_label if x_label else x_axis} ($\%$)' , fontsize=label_fontsize)
-    ax.set_ylabel(f'Multi-label Accuracy on {y_label if y_label else y_axis} ($\%$)', fontsize=label_fontsize)
-    ax.set_title(f'Objects Only', fontsize=label_fontsize)
     if set_aspect:
         ax.set_aspect('equal', adjustable='box')
     if include_legend:
