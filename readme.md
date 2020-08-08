@@ -1,5 +1,5 @@
 # [Evaluating Machine Accuracy on ImageNet](https://proceedings.icml.cc/static/paper_files/icml/2020/6173-Paper.pdf)
-## Vaishaal Shankar<sup>\*</sup>, Rebecca Roelofs<sup>\*</sup>, Horia Mania, Alex Fang, Benjamin Recht, Ludwig Schmid
+## Vaishaal Shankar<sup>\*</sup>, Rebecca Roelofs<sup>\*</sup>, Horia Mania, Alex Fang, Benjamin Recht, Ludwig Schmidt
 
 ![Main Plot](human_acc_main.jpg)
 
