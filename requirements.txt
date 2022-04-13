@@ -1,4 +1,4 @@
-dataparser
+dateparser
 imageio
 pandas
 streamlit
