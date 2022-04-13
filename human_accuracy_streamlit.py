@@ -23,7 +23,8 @@ def load_ha(ha_data):
                                  split_wnids=ha_data["split_wnids"],
                                  image_map=ha_data["image_map"],
                                  all_candidates=ha_data["all_candidates"],
-                                 wnid_map=ha_data["wnid_map"])
+                                 wnid_map=ha_data["wnid_map"],
+                                 initial_annotations=ha_data["initial_annots"])
 
 class ModelTypes(enum.Enum):
     MODEL = ('Model trained on ImageNet', 'tab:blue', 150)
@@ -65,7 +66,7 @@ def load_data():
 
     if not human_accuracy_data.exists():
         download_state = st.text("Downloading human_accuracy.pickle...")
-        data_bytes = urllib.request.urlopen("https://pictureweb.s3-us-west-2.amazonaws.com/human_accuracy.pickle").read()
+        data_bytes = urllib.request.urlopen("https://imagenetv2public.s3-us-west-2.amazonaws.com/human_accuracy.pickle").read()
         download_state = st.text("Downloading human_accuracy.pickle...done")
         with open("human_accuracy.pickle", "wb") as f:
             f.write(data_bytes)

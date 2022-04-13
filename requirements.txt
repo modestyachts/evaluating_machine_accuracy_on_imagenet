@@ -1,0 +1,9 @@
+dataparser
+imageio
+pandas
+streamlit
+loguru
+nltk
+numpy
+scipy
+matplotlib
